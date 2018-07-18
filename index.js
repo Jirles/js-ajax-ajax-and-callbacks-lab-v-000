@@ -14,3 +14,7 @@ function searchRepositories(){
     $('#results').html(repositories);
   });
 };
+
+function showCommits(){
+
+};
