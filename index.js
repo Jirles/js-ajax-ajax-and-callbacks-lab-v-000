@@ -17,6 +17,6 @@ function searchRepositories(){
 
 function showCommits(element){
   $.get(`https://api.github.com/repos/${fullName}/commits`, function(response){
-    const templateHTML = $('#commits-template')
+    const templateHTML = $('#commits-template')[0].innerHTML;
   });
 };
