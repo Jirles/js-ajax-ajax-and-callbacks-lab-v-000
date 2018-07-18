@@ -49,8 +49,8 @@
     <script type="text/x-handlebars-template" id='commits-template'>
       {{#each this}}
         <ul>
-          <li>{{SHA}}</li>
-          <li>{{author}}</li>
+          <li>{{sha}}</li>
+          <li>{{committer.name}}</li>
           <li>{{> authorDetailsPartial owner }}</li>
         </ul>
       {{/each}}
