@@ -16,5 +16,5 @@ function searchRepositories(){
 };
 
 function showCommits(element){
-  $.get(`https://api.github.com/repos/:owner/:repo/commits`)
+  $.get(`https://api.github.com/repos/${fullName}/commits`)
 };
