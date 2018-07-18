@@ -12,7 +12,8 @@ function searchRepositories(){
     const template = Handlebars.compile(templateHTML);
     const repositories = template(response);
     $('#results').html(repositories);
-  }).fail(displayError());
+  })
+  .fail(displayError());
 };
 
 function showCommits(element){
@@ -22,7 +23,8 @@ function showCommits(element){
     const template = Handlebars.compile(templateHTML);
     const commits = template(response);
     $('#details').html(commits);
-  }).fail(displayError());
+  })
+  .fail(displayError());
 };
 
 function displayError(){
