@@ -50,8 +50,8 @@
       {{#each this}}
         <ul>
           <li>{{sha}}</li>
-          <li>{{committer.name}}</li>
-          <li>{{> authorDetailsPartial owner }}</li>
+          <li>{{commit.committer.name}}</li>
+          <li>{{> authorDetailsPartial committer }}</li>
         </ul>
       {{/each}}
     </script>
