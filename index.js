@@ -23,7 +23,7 @@ function showCommits(element){
     const commits = template(response);
     $('#details').html(commits);
   })
-  .fail(displayError());
+  .fail(displayError(););
 };
 
 function displayError(){
