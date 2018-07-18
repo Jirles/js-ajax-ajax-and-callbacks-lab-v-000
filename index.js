@@ -22,8 +22,7 @@ function showCommits(element){
     const template = Handlebars.compile(templateHTML);
     const commits = template(response);
     $('#details').html(commits);
-  })
-  .fail(displayError(););
+  }).fail(displayError(););
 };
 
 function displayError(){
