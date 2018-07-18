@@ -12,7 +12,7 @@ function searchRepositories(){
     const template = Handlebars.compile(templateHTML);
     const repositories = template(response);
     $('#results').html(repositories);
-  }).fail(displayError;
+  }).fail(displayError);
 };
 
 function showCommits(element){
@@ -26,5 +26,5 @@ function showCommits(element){
 };
 
 function displayError(){
-  alert("I'm sorry, there's been an error. Please try again");
+  $('#errors').html("I'm sorry, there's been an error. Please try again");
 }
