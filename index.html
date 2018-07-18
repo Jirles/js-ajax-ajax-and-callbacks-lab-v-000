@@ -39,7 +39,7 @@
         {{#each this.items}}
         <li>
           <h3><a href="{{html_url}}">{{name}}</a></h3>
-          <a href='#' onclick='showCommits();'>See Commits</a>
+          <a href='#' onclick='showCommits();' data-fullName="{{full_name}}">See Commits</a>
           <p>{{description}}</p>
           {{> authorDetailsPartial owner }}
         </li>
