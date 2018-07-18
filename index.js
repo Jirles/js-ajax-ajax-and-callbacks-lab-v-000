@@ -8,7 +8,7 @@ function searchRepositories(){
   const searchTerms = termsHTML.split(' ').join('+');
   const req = $.get(`https://api.github.com/search/repositories?q=${searchTerms}`, function(response){
     //put response through templates, pass off to results div
-    const tempateHTML = $('#repositories-template')[0].innerHTML;
+    const templateHTML = $('#repositories-template')[0].innerHTML;
     const template = Handlebars.compile(templateHTML);
     const repositories = template(response);
     $('#results').html(repositories);
