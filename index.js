@@ -12,7 +12,7 @@ function searchRepositories(){
     const template = Handlebars.compile(templateHTML);
     const repositories = template(response);
     $('#results').html(repositories);
-  });
+  }).fail(displayError());
 };
 
 function showCommits(element){
