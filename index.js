@@ -1,5 +1,5 @@
 $(document).ready(function (){
-  Handlebars.registerPartial('authorDetailsPartial', $('#author-details-partial'));
+  Handlebars.registerPartial('authorDetailsPartial', $('#author-details-partial')[0].innerHTML);
 
 });
 
