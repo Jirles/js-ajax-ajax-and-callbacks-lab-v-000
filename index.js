@@ -26,5 +26,5 @@ function showCommits(element){
 };
 
 function displayError(){
-  return "<h1>I'm sorry, there's been an error. Please try again.</h1>"
+  alert("I'm sorry, there's been an error. Please try again");
 }
