@@ -47,9 +47,13 @@
     </script>
 
     <script type="text/x-handlebars-template" id='commits-template'>
+
       {{#each this}}
-        SHA, the author
+        <ul>
+          <li>{{SHA}}</li>
+          <li>{{author}}</li>
         {{> authorDetailsPartial owner }}
+        </ul>
       {{/each}}
     </script>
 
