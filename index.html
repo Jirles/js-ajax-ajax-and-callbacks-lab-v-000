@@ -46,6 +46,13 @@
       </ul>
     </script>
 
+    <script type="text/x-handlebars-template" id='commits-template'>
+      {{#each this}}
+        SHA, the author
+        {{> authorDetailsPartial owner }}
+      {{/each}}
+    </script>
+
     <script type="text/x-handlebars-template" id='author-details-partial'>
       <h4><a href="https://github.com/{{login}}" >{{login}}</a></h4>
       <img src="{{avatar_url}}" height="32" width="32" alt="avatar">
